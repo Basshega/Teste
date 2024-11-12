@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About Bees</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: #fff8e7;
+        }
+
+        header {
+            background-color: #ffd700;
+            color: #333;
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .bee-facts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .fact-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .fact-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .importance-section {
+            background-color: #fff3cd;
+            border-radius: 8px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            color: #b58500;
+            margin-top: 2rem;
+        }
+
+        .hexagon-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .hexagon {
+            width: 100px;
+            height: 115px;
+            background-color: #ffd700;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 1rem;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .hexagon:hover {
+            background-color: #ffed4a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🐝 The Amazing World of Bees</h1>
+        <p>Nature's Most Industrious Pollinators</p>
+    </header>
+
+    <div class="container">
+        <section class="importance-section">
+            <h2>Why Bees Matter</h2>
+            <p>Bees are crucial pollinators that help plants reproduce, making them essential for our food supply and ecosystem health. Without bees, many of our favorite fruits and vegetables would cease to exist!</p>
+        </section>
+
+        <div class="hexagon-grid">
+            <div class="hexagon">15,000+ Species</div>
+            <div class="hexagon">1/3 of Food Production</div>
+            <div class="hexagon">5x Earth's Age</div>
+        </div>
+
+        <section class="bee-facts">
+            <div class="fact-card">
+                <h3>The Busy Life of Bees</h3>
+                <p>A single honey bee can visit up to 5,000 flowers in a single day, playing a crucial role in pollination.</p>
+            </div>
+            <div class="fact-card">
+                <h3>Incredible Communication</h3>
+                <p>Bees communicate through special dances to share information about food sources with their hive mates.</p>
+            </div>
+            <div class="fact-card">
+                <h3>Honey Production</h3>
+                <p>To produce one pound of honey, bees must visit about 2 million flowers and fly over 55,000 miles!</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Types of Bees</h2>
+            <div class="bee-facts">
+                <div class="fact-card">
+                    <h3>Honey Bees</h3>
+                    <p>Social insects that live in large colonies and are famous for producing honey and beeswax.</p>
+                </div>
+                <div class="fact-card">
+                    <h3>Bumble Bees</h3>
+                    <p>Large, fuzzy bees that are excellent pollinators and can fly in colder temperatures.</p>
+                </div>
+                <div class="fact-card">
+                    <h3>Solitary Bees</h3>
+                    <p>Independent bees that make individual nests rather than living in colonies.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="importance-section">
+            <h2>How to Help Bees</h2>
+            <ul>
+                <li>Plant bee-friendly flowers in your garden</li>
+                <li>Avoid using pesticides</li>
+                <li>Provide water sources for bees</li>
+                <li>Support local beekeepers</li>
+                <li>Create bee habitats in your yard</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
