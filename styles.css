@@ -1,0 +1,114 @@
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #fff8e7;
+}
+
+header {
+    background-color: #ffd700;
+    color: #333;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.bee-facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.fact-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.fact-card:hover {
+    transform: translateY(-5px);
+}
+
+.importance-section {
+    background-color: #fff3cd;
+    border-radius: 3px;
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    color: #b58500;
+    margin-top: 2rem;
+}
+
+.hexagon-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.hexagon {
+    width: 100px;
+    height: 115px;
+    background-color: #ffd700;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.hexagon:hover {
+    background-color: #ffed4a;
+}
+
+.sidebar {
+    display: block;
+    top: 0px;
+    left: 0;
+    translate: 0px 0px;
+    min-height: 100vh;
+    min-width: 200px;
+    width: 200px;
+    position: fixed;
+    background-color: #333;
+    translate: -100% 0px;
+    transition: 0.5s ease;
+}
+  
+.sidebar nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px 0px;
+}
+  
+.sidebar nav ul li {
+    margin: 20px 0px;
+}
+  
+.sidebar.open {
+    translate: 0px 0px;
+}
+  
